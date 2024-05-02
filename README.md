@@ -94,6 +94,7 @@ SAVE DATA in your container :
 ```
     // -v or --volume
     docker run -d --name your-name-container -v /tmp/container:/tmp -p 5001:5000 your-image-build
+    docker run -d --name website -v "$PWD/website:/usr/share/nginx/html" -p 8080:8080 --rm nginx
 ```
 
 ---
@@ -120,15 +121,6 @@ you must login into docker hub : docker login
 ```
 
 ---
-
-```
-
-docker run -d --name website -v "$PWD/website:/usr/share/nginx/html" -p 8080:8080 --rm nginx
-
-```
-
-
----
 note :
 ```
 combination of :
@@ -141,8 +133,8 @@ combination of :
 
 docker run helpful :
 ```
-docker run -it [container name]
-docker run -it app  //indicate you will have mode --interactive and --tty so you can debug your container on docker
+docker run -d -it [container name]
+docker run -d -it app  //indicate you will have mode --interactive and --tty so you can debug your container on docker
 ```
 
 Search image in DockerHub:

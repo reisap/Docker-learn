@@ -33,9 +33,9 @@ FUN FACT :
    -trivy
    -Dagda
 3. avoid latest in tag when you push your images docker into docker hub
-   ucup/webserver:1.0.1 always version not latest
 
-   latest make rollback difficult
+   - ucup/webserver:1.0.1 always version your image docker 
+   - latest make rollback difficult
 4. use non root in docker
 5. docker compose will make better if you are lazy to know all command :D hahaha
    docker-compose up
@@ -46,7 +46,7 @@ FUN FACT :
    its about delivery service you can provide in kubernetes
 
 ### Docker Compose
-1. Simplifies local development by allowing you to run multiple containers at once.
+1. Simplify local development by allowing you to run multiple containers at once.
 2. Uses a manifest file to declare your application's dependencies and run them in a local Docker network.
 3. Prevents you from having to run multiple docker CLI commands to start multiple containers.
 
