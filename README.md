@@ -141,3 +141,13 @@ docker run helpful :
 docker run -it [container name]
 docker run -it app
 ```
+
+Search image in DockerHub:
+```
+docker search [name image]
+docker search nginx
+docker search --filter is-official=true nginx
+```
+
+fun fact :
+- you can use your visual studio code and inspect your container, just right click and inspect your container
