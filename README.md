@@ -105,7 +105,7 @@ you must login into docker hub : docker login
 1. Rename your image with your current username
 ```
     docker tag (your-current-images-on local machine) (your-username/(new-image-to push into dockerhub):tag version)
-    docker tag your-images ucup/server-express:1.0
+    docker tag server-express ucup/server-express:1.0
 
 ```
 
@@ -139,7 +139,7 @@ combination of :
 docker run helpful :
 ```
 docker run -it [container name]
-docker run -it app
+docker run -it app  //indicate you will have mode --interactive and --tty so you can debug your container on docker
 ```
 
 Search image in DockerHub:
