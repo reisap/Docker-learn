@@ -46,7 +46,9 @@ docker run a combination of :
 but this is the fun fact, you will run with your terminal and cannot stop because forgot somenthing 
 lets fix this with :
 ```
-    docker run -d our-frist-image // -d indicate docker will running on your background machine
+    docker run -d our-first-image // -d indicate docker will running on your background machine
+    docker run -d -it our-first-image //you can also debug for this container -it --interactive tty
+    docker run -it -d -p 5000:5000 -v ${PWD}:/app/code our-first-image
 
     //dont forget to use this -d its your ninja ways !!!
 ```
@@ -55,7 +57,7 @@ lets fix this with :
 REMOVE container :
 ```
     docker stop [name or id container]
-    docker stop -t 0 [name or id container] //becareful this will lost your data (force close immediatly)
+    docker stop -t 0 [name or id container] //becareful this will lost your data (force close immediatly) -t --time int it means you are run 0 int time, immediately
 
     docker rm [name or id]
     //or easy way, you wanted to stop and also remove container
