@@ -113,7 +113,7 @@ volumes:
 ```
  profiles: its indicate you are have a name for your spesific service and you can run with : 
 
- docker-compose --profile [name profile in docker-compose.yaml]
+ docker-compose --profile [name profile in docker-compose.yaml] up | down | restart | stop
 
  //sample
 ```

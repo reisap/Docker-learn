@@ -17,6 +17,8 @@ command :
 
     docker exec --interactive --tty [name or id container] bash //for debug your apps
     docekr exec -i --y [name or id container] bash
+
+    docker image ls || docker images // do same things
 ```
 ---
 
@@ -122,6 +124,7 @@ you must login into docker hub : docker login
 
 ---
 note :
+docker top [name container]
 ```
 combination of :
 - docker container create

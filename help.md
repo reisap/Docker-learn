@@ -1,7 +1,7 @@
 ### When you cannot create more container :
 Solution 1 :
 ```
-    docker images //list all your images first
+    docker images //list all your images first 
     docker images rmi (your images) (your images) (your images)
     or
     docker images rmi -f (your images) (your images) (your images) //data will lost warning
@@ -11,6 +11,7 @@ Solution 1 :
 Solution 2 :
 ```
     docker system prune //will stop all container network etc
+    docker image prune
 ```
 
 ### When your docker run slowly :
