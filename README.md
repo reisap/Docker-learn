@@ -21,7 +21,10 @@ command :
 ---
 
 ## Easy way run docker container :
-sample :
+docker run a combination of :
+- docker container create
+- docker container start
+- docker container attach
 
 ```
     docker run hello-world:linux
@@ -30,10 +33,10 @@ sample :
 #### doing with Dockerfile :
 ```
     //will search file Dockerfile in your directory
-    docker build -t our-first-image . 
+    docker build -t our-first-image . // -t tag name of your image in your docker file 
     
     //or if you wanted to use file name in your Dockerfile you also can do this
-    docker build -t our-first image --file production.Dockerfile .    //will search dockerfile name --file or -f
+    docker build -t our-first-image --file production.Dockerfile .    //will search dockerfile name --file or -f
     //and you must be notice if you are use path directory in your path like /app/src/config/ in your docker file
 
     //run
