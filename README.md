@@ -114,8 +114,6 @@ you must login into docker hub : docker login
     docker push ucup/server-express:1.0 
 ```
 
-#### fun fact : Anyone can push to Docker Hub. You do not need to register an account.
-
 ---
 
 ```
